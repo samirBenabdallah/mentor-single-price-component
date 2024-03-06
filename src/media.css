@@ -1,0 +1,17 @@
+@media screen and (max-width: 650px) {
+  body {
+    align-items: start;
+    padding-block: 60px;
+  }
+  body > main {
+    display: block;
+    width: 90%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 412px) {
+  body > main > * {
+    width: 100%;
+    height: calc(100% / 3);
+  }
+}

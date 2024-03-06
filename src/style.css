@@ -1,0 +1,99 @@
+:root {
+  --Cyan: rgb(42, 178, 175);
+  --Cyan-2: rgba(42, 178, 176, 0.841);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+}
+body {
+  background-color: var(--Light-Gray);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body > main {
+  width: 700px;
+  height: 500px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+body > main > main {
+  grid-area: 1 / 1 / 2 / 3;
+}
+body > main > * {
+  padding: 20px;
+  border-radius: 5px;
+}
+body > main > main > h1 {
+  font-weight: 700;
+  color: var(--Cyan);
+  font-size: 1.5rem;
+}
+body > main > main > h2 {
+  font-weight: 700;
+  margin-block: 30px 15px;
+  color: var(--Bright-Yellow);
+}
+body > main > main > p {
+  color: var(--Grayish-Blue);
+  padding-right: 40px;
+}
+body > main > aside {
+  padding: 20px;
+  color: var(--Light-Gray);
+  background-color: var(--Cyan);
+}
+body > main > aside > h2 {
+  font-weight: 700;
+}
+body > main > aside > div {
+  margin-block: 15px;
+}
+body > main > aside > div > p {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+body > main > aside > div > p > span {
+  font-size: 1rem;
+  margin-left: 10px;
+  color: var(--Grayish-Blue);
+}
+body > main > aside > button {
+  width: 100%;
+  height: 40px;
+  border-radius: inherit;
+  border: none;
+  outline: none;
+  margin-top: 45px;
+  font-size: 18px;
+  background-color: var(--Bright-Yellow);
+  color: var(--Light-Gray);
+  box-shadow: 0 3px 7px 0px var(--Light-Gray);
+}
+body > main > footer {
+  color: var(--Light-Gray);
+  background-color: var(--Cyan-2);
+}
+body > main > footer > h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+body > main > footer > p {
+    margin-top: 20px;
+    padding-right: 60px;
+}
